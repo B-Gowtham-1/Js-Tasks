@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 6 - Count Words and Characters</title>
+</head>
+<body>
+    <h1>Task 6: Count Words and Characters</h1>
+    <button onclick="countWordsAndChars()">Count Words and Characters</button>
+    <script >
+        // TASK 6: Count Words and Characters
+function countWordsAndChars() {
+    let sentence = prompt("Enter a sentence:");
+    let words = sentence.trim().split(/\s+/).length;
+    let chars = sentence.replace(/\s/g, "").length;
+    alert(`Words: ${words}, Characters (no spaces): ${chars}`);
+}
+
+    </script>
+</body>
+</html>

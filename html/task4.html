@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 4 - Even or Odd Counter</title>
+</head>
+<body>
+    <h1>Task 4: Even or Odd Counter</h1>
+    <button onclick="evenOddCounter()">Count Even and Odd Numbers</button>
+    <script >
+        // TASK 4: Even or Odd Counter
+function evenOddCounter() {
+    let start = parseInt(prompt("Enter start of range:"));
+    let end = parseInt(prompt("Enter end of range:"));
+    let even = 0, odd = 0;
+    for (let i = start; i <= end; i++) {
+        if (i % 2 === 0) even++;
+        else odd++;
+    }
+    alert(`Even: ${even}, Odd: ${odd}`);
+}
+
+    </script>
+</body>
+</html>

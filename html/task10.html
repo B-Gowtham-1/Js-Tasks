@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 10 - ATM Withdrawal Simulation</title>
+</head>
+<body>
+    <h1>Task 10: ATM Withdrawal Simulation</h1>
+    <button onclick="atmSimulation()">Start ATM Simulation</button>
+    <script >
+        // TASK 10: ATM Withdrawal Simulation
+function atmSimulation() {
+    let balance = 1000;
+    while (balance > 0) {
+        let amount = prompt(`Balance: $${balance}\nEnter amount to withdraw (Cancel to exit):`);
+        if (amount === null) break;
+        amount = parseFloat(amount);
+        if (amount > balance) {
+            alert("Insufficient balance!");
+            break;
+        }
+        balance -= amount;
+        alert(`Withdrawn: $${amount}\nRemaining balance: $${balance}`);
+    }
+    alert("Session ended.");
+}
+
+    </script>
+</body>
+</html>

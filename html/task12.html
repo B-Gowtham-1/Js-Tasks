@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 12 - Grade Calculator</title>
+</head>
+<body>
+    <h1>Task 12: Grade Calculator</h1>
+    <button onclick="gradeCalculator()">Calculate Grade</button>
+    <script >// TASK 12: Grade Calculator
+function gradeCalculator() {
+    let total = 0;
+    for (let i = 1; i <= 5; i++) {
+        total += parseFloat(prompt(`Enter marks for subject ${i}:`));
+    }
+    let percent = total / 5;
+    let grade;
+    if (percent >= 90) grade = "A";
+    else if (percent >= 80) grade = "B";
+    else if (percent >= 70) grade = "C";
+    else if (percent >= 50) grade = "D";
+    else grade = "Fail";
+    alert(`Percentage: ${percent}%\nGrade: ${grade}`);
+}
+</script>
+</body>
+</html>
