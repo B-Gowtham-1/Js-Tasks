@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 13 - Number Guessing Game</title>
+</head>
+<body>
+    <h1>Task 13: Number Guessing Game</h1>
+    <button onclick="guessingGame()">Start Guessing Game</button>
+    <script >
+        // TASK 13: Number Guessing Game
+function guessingGame() {
+    let answer = Math.floor(Math.random() * 10) + 1;
+    for (let tries = 1; tries <= 3; tries++) {
+        let guess = parseInt(prompt("Guess a number (1-10):"));
+        if (guess === answer) {
+            alert("Correct! You win!");
+            return;
+        } else {
+            alert("Wrong! Attempts left: " + (3 - tries));
+        }
+    }
+    alert("Out of tries! The correct number was: " + answer);
+}
+
+    </script>
+</body>
+</html>

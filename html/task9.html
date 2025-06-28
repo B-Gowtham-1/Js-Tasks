@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 9 - Character Counter (Ignore Spaces)</title>
+</head>
+<body>
+    <h1>Task 9: Character Counter (Ignore Spaces)</h1>
+    <button onclick="charCounterNoSpaces()">Count Characters (No Spaces)</button>
+    <script >
+        // TASK 9: Character Counter (Ignore Spaces)
+function charCounterNoSpaces() {
+    let sentence = prompt("Enter a sentence:");
+    let count = 0;
+    for (let ch of sentence) {
+        if (ch === " ") continue;
+        count++;
+    }
+    alert("Characters (excluding spaces): " + count);
+}
+
+    </script>
+</body>
+</html>

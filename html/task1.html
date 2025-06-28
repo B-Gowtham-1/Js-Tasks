@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 1 - Login Simulation</title>
+</head>
+<body>
+    <h1>Task 1: Login Simulation</h1>
+    <button onclick="loginSimulation()">Start Login Simulation</button>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7MJK7Olfr1nSujjOwdPTlu?utm_source=generator&theme=0" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>    <script >
+    
+    function loginSimulation() {
+    const correctUsername = "user";
+    const correctPassword = "pass";
+    let attempts = 3;
+    while (attempts > 0) {
+        let username = prompt("Enter username:");
+        let password = prompt("Enter password:");
+        if (username === correctUsername && password === correctPassword) {
+            alert("Login successful!");
+            return;
+        } else {
+            attempts--;
+            alert("Incorrect! Attempts left: " + attempts);
+        }
+    }
+    alert("Account locked. Too many failed attempts.");
+}
+</script>
+</body>
+</html>

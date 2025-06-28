@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2 - Password Strength Validator</title>
+</head>
+<body>
+    <h1>Task 2: Password Strength Validator</h1>
+    <button onclick="validatePassword()">Validate Password</button>
+    <script >
+        // TASK 2: Password Strength Validator
+function validatePassword() {
+    let password = prompt("Enter a password:");
+    let isStrong = password.length >= 8 &&
+        /[A-Z]/.test(password) &&
+        /\d/.test(password) &&
+        /[!@#$%^&*(),.?":{}|<>]/.test(password);
+    if (isStrong) {
+        alert("Strong password!");
+    } else {
+        alert("Weak password! Must be 8+ chars, include uppercase, number, and special character.");
+    }
+}
+
+
+    </script>
+</body>
+</html>

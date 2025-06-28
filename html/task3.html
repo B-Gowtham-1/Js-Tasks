@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 3 - Repeated Character Finder</title>
+</head>
+<body>
+    <h1>Task 3: Repeated Character Finder</h1>
+    <button onclick="findRepeatedChars()">Find Repeated Characters</button>
+    <script >
+        // TASK 3: Repeated Character Finder
+function findRepeatedChars() {
+    let str = prompt("Enter a string:");
+    let chars = {};
+    let repeated = [];
+    for (let ch of str) {
+        chars[ch] = (chars[ch] || 0) + 1;
+    }
+    for (let ch in chars) {
+        if (chars[ch] > 1) repeated.push(ch);
+    }
+    alert("Repeated characters: " + (repeated.length ? repeated.join(", ") : "None"));
+}
+
+    </script>
+</body>
+</html>

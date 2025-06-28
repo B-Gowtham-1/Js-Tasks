@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 5 - FizzBuzz Challenge</title>
+</head>
+<body>
+    <h1>Task 5: FizzBuzz Challenge</h1>
+    <button onclick="fizzBuzz()">Start FizzBuzz</button>
+    <script >
+        // TASK 4: Even or Odd Counter
+function evenOddCounter() {
+    let start = parseInt(prompt("Enter start of range:"));
+    let end = parseInt(prompt("Enter end of range:"));
+    let even = 0, odd = 0;
+    for (let i = start; i <= end; i++) {
+        if (i % 2 === 0) even++;
+        else odd++;
+    }
+    alert(`Even: ${even}, Odd: ${odd}`);
+}
+
+    </script>
+</body>
+</html>
